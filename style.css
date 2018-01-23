@@ -1,95 +1,148 @@
 
-body{
+body {
     margin: 0;
-    font-family:Roboto;
-    background-color: #fff;   
+    font-family: Roboto;
+    background-color: #fff;
 }
-.slider-wrapper{
-    width: 100%;
-    background-image: url(img/bg-slider.jpg);
-    background-size: cover ;
-}
+
 .main-wrapper {
-    float: left;
-    width: 100%;
-    box-shadow: 0 0 15px 3px #000;
-    background-color: #2a7eac;
+width: 100%;
+box-shadow: 0 0 15px 3px lightgray;
+background-color: #2a7eac;
 }
 
 .second-wrapper {
     margin: 0 auto;
     width: 1230px;
-    height: 96px;
+    height: 112px;
     max-width: 100%;
+    background-color: #2a7eac;
+}
+
+
+.logo-wrapper {
+    box-shadow: 0 0 15px 3px lightgray;
+    max-width: 30%;
+    display: inline-block;
+}
+
+.logo1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-text-wrapper {
+    width: 70%;
+    float: right;
+    display: inline-block;
 }
 
 .contactBlock {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
     padding-top: 20px;
     padding-bottom: 13px;
-    width: 72%;
-    float: right;
     color: #fff;
     border-bottom: 2px solid lightgray;
-    text-align: right;
-}
-/*navbar*/
-a, a:hover{
-    text-decoration: none;
-}
-.clearfix:before, 
-.clearfix:after{
-    content:" ";
-    display: table;
-    
-}
-.clearfix:after{clear:both;}
-
-
-.container{
-    max-width: 1170px;
-    margin: 0 auto;
-    box-shadow: 0 0 15px 3px lightgray;
 }
 
+.navbar {
+    width: 100%;
+    display: inline-block;
+}
 
 .nav, #touch-menu {
     margin-top: 0;
     margin-bottom: 0;
     background: #2a7eac;
     padding-left: 0;
-    font-family: Lato,Helvetica,Arial,sans-serif;
     list-style: none;
 }
-.nav li{
-    float: left;
+
+@media (min-width: 724px) {
+    .goleft {
+        float: left;
+    }
 }
 
-.nav li a, 
-#touch-menu{
+.nav {
+    display: inline-block;
+}
+
+.nav li a,
+#touch-menu {
     display: block;
-    padding:10px 15px;
+    padding: 10px 15px;
     font-weight: bold;
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+    background: #2a7eac;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+
 }
 
-.nav li a:hover, #touch-menu:hover{text-decoration: underline;}
-#touch-menu {display: none;}
-/*end navbar*/
-.logo1 {
-    position: absolute;
-    box-shadow: 0 0 15px 3px #000;
-}
-@media(max-width: 1070px){
-.navkbar {
-    float: right;
-    width: 300px;
-}
+nav {
+    display: inline-block;
 }
 
+.nav li a:hover, #touch-menu:hover {
+    text-decoration: underline;
+}
 
-/*!*start slider*!*/
+#touch-menu {
+    display: none;
+}
+
+@media (max-width: 724px) {
+    .navbar {
+        width: 70%;
+        float: right;
+    }
+
+    #touch-menu {
+        text-align: right;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+    }
+
+    .nav li {
+        float: none;
+        width: 100%;
+    }
+
+    #touch-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 724px) {
+    .nav li {
+        width: 12.5%;
+        text-align: center;
+        height: auto;
+    }
+}
+
+.slider-wrapper {
+    width: 100%;
+    background-image: url("F:/Main_3size/images/bg-slider.jpg");
+    background-size: cover;
+    padding-top: 40px;
+}
+
+/*header*/
+
 .main-div {
     max-width: 1230px;
     margin: 0 auto;
@@ -168,7 +221,7 @@ a, a:hover{
     background-color: white;
     max-width: 1230px;
     margin: 0 auto;
-    
+
 }
 @media (min-width: 724px){
     .site-wrapper{
@@ -176,7 +229,6 @@ a, a:hover{
     }
 }
 
-}
 @media (min-width: 724px) {
     .goleft{
         float: left;
@@ -233,7 +285,8 @@ h4{
 h5{
     position: absolute;
     top:250px;
-    left: 20px;
+
+left: 20px;
     font-family: Roboto;
     font-size: 14px;
 }
@@ -255,7 +308,7 @@ h5{
     margin: 0 ;
     background-color: #4498c6;
     color: #fff;
-  
+
 }
 .text1{
     display: inline-block;
@@ -270,7 +323,7 @@ h5{
     padding-bottom: 15px;
 }
 .text3{
-   display: inline-block;
+    display: inline-block;
     font-family:Roboto ;
     padding-right: 70px;
     padding-bottom: 15px;
@@ -283,8 +336,8 @@ h5{
 }
 .footpowby{
     text-align: center;
-     box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
-     padding-top: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+    padding-top: 20px;
 }
 
 .subtitle11{
@@ -306,8 +359,8 @@ h5{
 .col-4{
     width: 49%;
     float: left;
-    
-    
+
+
 }
 .title13{
     font-size: 24px;
@@ -338,11 +391,5 @@ h5{
 @media (max-width: 724px) {
     .secfor{
         margin-left: 0;
-    }
-}
-@media(min-width: 1070px){
-    .navzhydukbar{
-        float: left;
-        width: 100%;
     }
 }
